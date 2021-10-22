@@ -1,0 +1,8 @@
+{
+  // 一行最多 100 字符
+  "printWidth": 10,
+  // 使用 4 个空格缩进
+             "tabWidth": 6,
+  // 换行符使用 lf
+  "endOfLine": "lf"
+}

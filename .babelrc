@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "@babel/preset-react", "@babel/preset-env", "@babel/typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-transform-async-to-generator",
+    // decorators 插件必须配置在 properties 插件之前
+    // 支持解析装饰器草案语法，legacy表示保留装饰器语法，需要 @babel/plugin-proposal-class-properties 的 loose 配置为true
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-proposal-object-rest-spread"	,//支持...剩余操作符和扩展操作符等,
+  ]
+}
